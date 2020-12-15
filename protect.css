@@ -1,0 +1,299 @@
+*,	*:before,	*:after	{		
+box-sizing:	border-box;
+margin: 0; 
+
+}
+
+:root{
+  --primary-color: rgb(207, 134, 241);
+  --secondary-color: rgb(76, 7, 122);
+
+}
+
+body {
+  background: var(--primary-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* NAV BAR */
+
+header {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: -2.8rem;
+  z-index: 20;
+  
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: stretch;
+}
+
+ul > * {
+  color: white;
+  list-style: none;
+}
+
+.ama {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+
+  
+}
+
+.ama > * {
+  padding: 0.4rem;
+  list-style: none;
+}
+
+.kofi {
+  background-color: var(--secondary-color);
+  padding: 0.5rem;
+}
+
+.container{
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--secondary-color);
+  
+}
+
+
+/*slide images*/
+ .slide-img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+
+}
+
+ .headline {
+  bottom: 100px;
+  left: 2px; 
+  height: 10%;
+  width: 10%;
+  padding: 10px 5px 10px 5px;
+  margin: 0 auto;
+  position: absolute;
+  background: black;
+  opacity: 0.6;
+  border-bottom: 5px solid var(--primary-color);
+  
+}
+
+
+h1{
+  color: azure;
+  font-size: 1.0em;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-family: 'PT Serif', serif;
+  
+}
+
+h2{
+  
+  color: white;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  margin-top: 1em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-color: black;
+  height: 50px;
+  width: 40%;
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  padding: 10px;
+}
+
+.first-margin {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.middle{
+  z-index: 10;
+  background: linear-gradient( var(--primary-color), var(--secondary-color) ), url(./images/mubariz-mehdizadeh-t3zrEm88ehc-unsplash.jpg);
+  background-size: cover;
+  background-blend-mode: darken ;
+}
+
+.middle{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.one{
+  grid-column: 3 / 3;
+}
+
+.one {
+  border: 4px solid white;
+  border-radius: 4px;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0.5rem 0.5rem;
+}
+
+.two {
+  align-self: end;
+  border: 4px solid white;
+  border-radius: 4px;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 0 0.5rem 0.5rem;
+}
+
+.three {
+  border: 4px solid white;
+  border-radius: 4px;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 0 10rem 0.5rem;
+}
+
+.images{
+  display: block;
+  width: 99%;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.button {
+  width: 25%;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  margin:0 0 0.5rem 1rem;
+  padding: 1rem;
+  background: linear-gradient( var(--primary-color), var(--secondary-color) );
+}
+
+.first-flex{
+  width: 100%;
+  margin-top: 50px;
+
+    
+}
+
+#sub-container{
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  justify-items: center;
+
+}
+
+#sub-container p{
+ /*padding: 10px;*/
+ margin-top: 20px;
+ color: white;
+}
+
+.A{
+ 
+ min-width: 100%;
+ height: 500px;
+ overflow: hidden;
+}
+
+.first-flex #sub-container{
+  background-blend-mode: multiply;
+}
+
+.first-flex .flex-imag{
+  mix-blend-mode: normal;
+}
+
+.B{
+ min-width: 100%;
+ height: 500px;
+ overflow: hidden;
+ 
+
+}
+
+.C{
+ min-width: 100%;
+ height: 500px;
+ overflow: hidden;
+
+}
+
+ .flex-imag{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  
+}
+
+.para{
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+p{
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+}
+
+li{
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+}
+
+
+/* footer */
+ footer{
+   background-color: rgba(226, 155, 164, 0.3);
+   color: white;
+ }
+
+ .borders{
+  border-top:3px solid white;
+  margin: 100px 15px 0 15px;
+  border-bottom: 3px solid white;
+  
+}
+
+.class{
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.last-row{
+  height: 18vh;
+  padding: 20px;
+}
+
+
+
